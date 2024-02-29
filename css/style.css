@@ -1,0 +1,78 @@
+/*contoh css eksternal*/
+p{
+color: blue;
+text-align: justify;
+font-family: 'Courier New', Courier, monospace;
+font-size: 12pt;
+}
+body{
+    background-color: burlywood;
+    background-image:url('../img/smile.jpg');
+    background-size: cover;
+}
+fieldset,legend
+{
+    border-width: 1px;
+    border-color: bisque;
+    border-radius: 20px;
+}
+legend{
+    padding: 10px;
+    color: brown;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: brown;
+}
+table 
+{
+   
+    border: 10px;
+    margin: auto;
+    tr{
+        padding: 5px;
+        border: 1px solid rgb(23, 86, 23);
+    }
+}
+tr:hover{
+background-color: rgb(252, 250, 247);
+color: blueviolet;
+font-size: 20pt;
+font-weight: bold;
+font-family: 'Courier New', Courier, monospace;
+padding: 10px;
+}
+/*contoh selector id dapat masuk kesemua tag*/
+#paragraph{
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    color: aqua;
+}
+ul, li, a.item:link, a.item:visited, a.item:active{
+    text-decoration: none;
+    list-style: none;
+    float: left;
+    padding: 2px 3px;
+    background-color: white;
+}
+
+/*Bagian Galery*/
+.parallax {
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.parallax img {
+    width: 500px;
+    height: 500px;
+    display: inline-block;
+    margin: 0 10px;
+    transform: translateZ(-1px) scale(2);
+    transition: transform 0.1s ease-out;
+}
+
+.parallax img:hover {
+    transform: translateZ(-1px) scale(2.2);
+}
